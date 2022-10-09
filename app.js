@@ -11,10 +11,9 @@ app.use(express.static("public"));
 // api-key -> d2591416a2ccec6cfae4dbcf4a24e220-us8
 // list-id -> e791a46e73
 client.setConfig({
-  apiKey: "d2591416a2ccec6cfae4dbcf4a24e220-us8",
+  apiKey: "c1a49ac80fa4ed328be20a4e1c7c2043-us8",
   server: "us8",
 });
-
 
 app.get("/", async(req, res)=>{
     res.sendFile(__dirname + "/signup.html");
