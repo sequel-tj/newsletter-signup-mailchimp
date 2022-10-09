@@ -44,7 +44,7 @@ app.post("/", async(req, res)=>{
       //     skipMergeValidation: false
       // }
   );
-  // console.log(respone);
+  // console.log(response);
 
   // request(response, function(ERROR, RESPONSE, BODY){
   //     if(ERROR || RESPONSE.status === 404) {
