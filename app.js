@@ -25,25 +25,25 @@ app.post("/", async(req, res)=>{
     let lname = req.body.lname;
     let email = req.body.email;
 
-    // const response = await client.lists.addListMember("e79146e73", {
-    //       email_address: email,
-    //       status: "subscribed",
-    //       merge_fields: {
-    //           FNAME: fname,
-    //           LNAME: lname,
-    //           // BIRTHDAY: "01/22",
-    //           // ADDRESS: {
-    //           //     addr1: "123 Freddie Ave",
-    //           //     city: "Atlanta",
-    //           //     state: "GA",
-    //           //     zip: "12345",
-    //           // },
-    //       },
-    //   }
+    const response = await client.lists.addListMember("e791a46e73", {
+          email_address: email,
+          status: "subscribed",
+          merge_fields: {
+              FNAME: fname,
+              LNAME: lname,
+              // BIRTHDAY: "01/22",
+              // ADDRESS: {
+              //     addr1: "123 Freddie Ave",
+              //     city: "Atlanta",
+              //     state: "GA",
+              //     zip: "12345",
+              // },
+          },
+      }
       // {
       //     skipMergeValidation: false
       // }
-  // );
+  );
   // console.log(respone);
 
   // request(response, function(ERROR, RESPONSE, BODY){
